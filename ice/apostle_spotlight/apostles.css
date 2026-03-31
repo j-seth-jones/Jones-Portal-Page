@@ -1,0 +1,98 @@
+
+body {
+    background: #E6ECED;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 60px 40px;
+    border-radius: 35px;
+    background: url("images/christus.webp");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid black;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+}
+
+.first-presidency {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-items: bottom;
+    gap: 20px;
+}
+
+.bottom-img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.bottom-img.left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.bottom-img.right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.apostles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+.prophet img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.apostle img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.prophet img:hover {
+    border-color: #FFD700;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.apostle img:hover {
+    border-color: #FFD700;
+    transform: scale(1.1);
+    cursor: pointer;
+}
